@@ -1,3 +1,5 @@
+from base_module import config_util
+from base_module import base_module
 from flask import Flask, render_template
 
 from app.ui1.views import ui1
@@ -5,6 +7,8 @@ from app.api1.api import api1
 from app.api2.api import api2
 
 app = Flask(__name__)
+app.config.update(config_util.load_config("basic_flask_app.yaml"))
+base_module.init_app(app)
 
 # two decorators, same function
 @app.route('/')
