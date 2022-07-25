@@ -1,4 +1,3 @@
-from optparse import Option
 from .base import *
 
 T=TypeVar("T")
