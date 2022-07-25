@@ -2,7 +2,7 @@ from ast import Dict
 from enum import Enum, EnumMeta
 from itertools import chain
 import logging
-from typing import ClassVar, Iterable, Iterator, Mapping, Optional, Tuple, Type
+from typing import ClassVar, Optional, Tuple, Type
 from typing_extensions import reveal_type
 
 logger = logging.getLogger(__name__)
