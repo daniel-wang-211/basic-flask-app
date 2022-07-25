@@ -15,5 +15,7 @@ def symbol():
 def myth():
     return render_template('myth.html', the_title='Tiger in Myth and Legend')
 
+# Prepare to add here.
+
 if __name__ == '__main__':
     app.run(debug=True)
